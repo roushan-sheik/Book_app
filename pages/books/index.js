@@ -7,7 +7,7 @@ const Home = ({ books }) => {
 };
 export default Home;
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const books = await GetAllBooks();
 
   return {
