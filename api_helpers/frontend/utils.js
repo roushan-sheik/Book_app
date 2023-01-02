@@ -7,7 +7,7 @@ export const GetAllBooks = async () => {
     return new Error('Internal Server Error');
   }
   const data = res.data?.books;
-  console.log(data);
+
   return data;
 };
 
