@@ -1,21 +1,16 @@
-import {
-  Typography,
-  Box,
-  FormLabel,
-  TextField,
-  Checkbox,
-  Button,
+     import {
+  Box, Button, Checkbox, FormLabel,
+  TextField, Typography
 } from '@mui/material';
 
-import React from 'react';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+      import { useRouter } from 'next/router';
+import React, { useState } from 'react';
 
-const labelSx = { marginTop: '10px' };
+const labelSx = {    marginTop: '10px' };
 const Form = ({ data, getFormData }) => {
   const router = useRouter();
 
-  const [inputs, setInputs] = useState(
+          const [inputs, setInputs] = useState(
     data
       ? {
           title: data.title,
@@ -34,9 +29,9 @@ const Form = ({ data, getFormData }) => {
   );
   const handleChange = (e) => {
     setInputs((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
+            ...prevState,
+             [e.target.name]: e.target.value,
+    }));   
   };
   const handleSubmit = (e) => {
     e.preventDefault();
