@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import connectDB from './connectDB';
 
 const connectDB = async () => {
   try {
@@ -12,3 +13,4 @@ const connectDB = async () => {
 };
 
 export default connectDB;
+
